@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>TRAVELER - Free Travel Website Template</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Free HTML Templates" name="keywords">
+<meta content="Free HTML Templates" name="description">
+
+<!-- Favicon -->
+<link href="img/favicon.ico" rel="icon">
+
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<style>
+            /* Change color of active link to blue */
+            .navbar-nav .nav-link.active {
+    color: #0277e6 !important;
+    }
+    /* Change hover color to light blue for specific links */
+    .navbar-nav .nav-link[href="home.html"]:hover,
+    .navbar-nav .nav-link[href="reviews.html"]:hover,
+    .navbar-nav .nav-link[href="about.html"]:hover,
+    .navbar-nav .nav-link[href="contact.html"]:hover
+    {
+        color: #0277e6;;
+    }
+    #itinerary-options {
+display: flex;
+justify-content: space-around;
+}
+
+.itinerary-section {
+width: 30%;
+border: 1px solid #ccc;
+padding: 10px;
+}
+
+.radio-container {
+display: flex;
+flex-direction: column;
+}
+
+.radio-inline {
+margin-bottom: 5px;
+}
+
+.radio-inline input[type="radio"] {
+margin-right: 5px;
+}
+</style>
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-light pt-3 pb-0.6 d-none d-lg-block">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div style="position: absolute; left: 0;">
+            <a href="home.html" class="topbar-brand">
+                <img src="C:/Users/Alexander/OneDrive - STI College Meycauayan/Desktop/capstoneupdated/new layout/Russel Etits/backgroundimages/269622747_905285053523305_1106364928305022815_n.jpg" alt="eTourMo Logo" style="max-height: 80px; width: 80px;">
+            </a>
+        </div>
+        <div class="text-center">
+            <h2 style="color:#0277e6;">IT'S TIME TO TRAVEL! EXPLORE THE WORLD WITH US</h2>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light  border-5 border-primary sticky-top p-0">
+    <div class="collapse navbar-collapse justify-content-between px-3 text-center" id="navbarCollapse">
+        <div class="navbar-nav mx-auto"> <!-- Changed ml-auto to mx-auto -->
+            <a href="accounts.html" class="nav-item nav-link">Trip Planner</a>
+            <a href="reviews.html" class="nav-item nav-link">Reviews</a>
+            <a href="about.html" class="nav-item nav-link">About ETourMo Travel and Tours</a>
+            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+        </div>
+        <div class="navbar-nav">
+            <a href="accounts.html" class="nav-item nav-link btn btn-primary mx-2" style="padding: 0.25rem 0.5rem; font-size: 0.875rem; line-height: 1.25; border-radius: 0.2rem; background-color: black; color:white">Log in</a>
+            <a href="accounts.html" class="nav-link " style= "padding: 0.25rem 0.5rem; font-size: 0.875rem; line-height: 1.25; border-radius: 0.2rem;">Sign up</a>
+        </div> 
+    </div>
+</nav>
+
+<!-- Navbar End -->
+
+
+<!-- Header Start -->
+<div class="container-fluid page-header">
+    <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+            <h3 class="display-4 text-white text-uppercase">Trip Planner</h3>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Travel Details Section -->
+<div class="container1">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card1 shadow-lg">
+                <div class="card-body1">
+                    <div class="center-name">
+                    <h2 class="card-title1 mb-4">Travel Details</h2>
+                    </div>
+                    <form id="travel-details-form">
+                        <div class="form-group1">
+                            <label for="flight-details"><b>Flight Details:</b></label>
+                            <p id="flight-details">From NAIA to Japan</p>
+                        </div>
+                        <div class="form-group1">
+                            <label for="hotel-accommodation"><b>Cities:</b></label>
+                            <select class="form-control" id="hotel-accommodation">
+                                <option value="Phoenix Resort Pyeongchang">Tokyo</option>
+                                <option value="Phoenix Resort Pyeongchang">Yokohama</option>
+                                <option value="Phoenix Resort Pyeongchang">Osaka</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <label for="hotel-accommodation"><b>Town:</b></label>
+                            <select class="form-control" id="hotel-accommodation">
+                                <option value="Phoenix Resort Pyeongchang">Shibuya </option>
+                                <option value="Phoenix Resort Pyeongchang">Shinjuku</option>
+                                <option value="Phoenix Resort Pyeongchang">Ginza</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group1">
+                            <label for="hotel-accommodation"><b>Hotel Accommodation:</b></label>
+                            <select class="form-control" id="hotel-accommodation">
+                                <option value="Phoenix Resort Pyeongchang">Mitsui Garden Hotel</option>
+                                <option value="Phoenix Resort Pyeongchang">APA Hotela</option>
+                                <option value="Phoenix Resort Pyeongchang">Marriott International</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group1">
+                            <label for="transportation"><b>Transportation:</b></label>
+                            <select class="form-control" id="transportation">
+                                <option value="Van">Van</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="Sports Car">Sports Car</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group1">
+                            <label><b>Activities and Excursions:</b></label><br>
+                            <label class="radio-inline1"><input type="radio" name="activities-excursions" value="" checked>Guided Walking Tours</label>
+                            <label class="radio-inline1"><input type="radio" name="activities-excursions" value="">Escape Rooms</label>
+                            <label class="radio-inline1"><input type="radio" name="activities-excursions" value="" checked>Shibuya Scavenger Hunt</label>
+                            <label class="radio-inline1"><input type="radio" name="activities-excursions" value="">Shibuya Museums</label>
+                        </div>
+                        <div class="form-group1">
+                            <label for="travel-itinerary"><b>Days</b></label><br>
+                            <div class="travel-days">
+                                <label class="radio-inline1"><input type="radio" name="travel-days" value="1">Day 1</label>
+                                <label class="radio-inline1"><input type="radio" name="travel-days" value="2">Day 2</label>
+                                <label class="radio-inline1"><input type="radio" name="travel-days" value="3">Day 3</label>
+                                <label class="radio-inline1"><input type="radio" name="travel-days" value="4">Day 4</label>
+                                <label class="radio-inline1"><input type="radio" name="travel-days" value="5">Day 5</label>
+                                <label class="radio-inline1"><input type="radio" name="travel-days" value="6">Day 6</label>
+                                <label class="radio-inline1"><input type="radio" name="travel-days" value="7">Day 7</label>
+                                <!-- Add more radio buttons for additional days if needed -->
+                            </div>
+                            <br>
+                            <div id="itinerary-options">
+                                <div class="itinerary-section">
+                                    <label for="morning"><b>Morning</b></label><br>
+                                    <label for="morning-itinerary">Available Itineraries</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="morning-itinerary" value="Louvre">Start your day with breakfast at one of Shibuya's trendy cafes or traditional Japanese eateries.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="morning-itinerary" value="Louvre">Begin your day with a traditional Japanese breakfast at a local cafe or restaurant.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="morning-itinerary" value="Louvre">Visit the Bunkamura Museum of Art to explore contemporary Japanese art and exhibitions.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="morning-itinerary" value="Louvre">Take a guided walking tour of Shibuya to learn about its history, culture, and landmarks.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="morning-itinerary" value="Louvre">Explore Shibuya's backstreets and hidden alleyways to discover local street art and graffiti.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="morning-itinerary" value="Breakfast">Visit the Hachiko Statue near Shibuya Station and learn about the heartwarming story of loyalty.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="morning-itinerary" value="Versailles">Explore the bustling streets of Center Gai and browse the shops for unique souvenirs and fashion finds.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="morning-itinerary" value="Dinner">Head to Shibuya Crossing and witness the iconic scramble intersection in action.</label><br>
+                                </div>
+                            
+                                <div class="itinerary-section">
+                                    <label for="afternoon"><b>Afternoon</b></label><br>
+                                    <label for="afternoon-itinerary">Available Itineraries</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="afternoon-itinerary" value="Louvre">Enjoy lunch at a local restaurant serving Japanese cuisine or international fare.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="afternoon-itinerary" value="Breakfast">Take a leisurely stroll through Yoyogi Park, relax by the pond, and admire the lush greenery.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="afternoon-itinerary" value="Versailles">Visit Meiji Shrine located within Yoyogi Park and experience a serene oasis in the heart of the city..</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="afternoon-itinerary" value="Dinner">Explore Cat Street for vintage shopping and eclectic boutiques.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="afternoon-itinerary" value="Sunset">Enjoy a traditional tea ceremony experience at a tea house in Shibuya or nearby Harajuku.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="afternoon-itinerary" value="Zip-lining">Visit a local shrine or temple, such as Yoyogi Hachimangu Shrine or Konno Hachimangu Shrine, to learn about Japanese spirituality and traditions.</label>
+                                    <label class="radio-inline1"><input type="radio" name="afternoon-itinerary" value="Zip-lining">Attend a cultural workshop or class, such as calligraphy or origami, to learn traditional Japanese arts and crafts.</label>
+                                </div>
+                            
+                                <div class="itinerary-section">
+                                    <label for="evening"><b>Evening</b></label><br>
+                                    <label for="evening-itinerary">Available Itineraries</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="evening-itinerary" value="Louvre">Ascend to Shibuya Sky for panoramic views of Tokyo's skyline at sunset.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="evening-itinerary" value="Breakfast">Have dinner at one of Shibuya's diverse dining establishments, offering everything from sushi to ramen..</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="evening-itinerary" value="Versailles">Experience Shibuya's vibrant nightlife scene by visiting a karaoke bar or izakaya for drinks and entertainment.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="evening-itinerary" value="Dinner">Dine at a traditional Japanese restaurant serving kaiseki cuisine or a multi-course dinner.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="evening-itinerary" value="Sunset">Experience a traditional Japanese performance, such as a Noh or Kabuki theater show, at a nearby venue.</label><br>
+                                    <label class="radio-inline1"><input type="radio" name="evening-itinerary" value="Zip-lining">Reflect on your day of cultural exploration while strolling through Shibuya's illuminated streets and bustling nightlife.</label>
+                                </div>
+                            </div>                                
+                        </div>
+                    </form>
+                    <div class="form-group1">
+                        <button class="btn btn-primary1 btn-block" style="border: #0277e6;background-color: #0277e6;" onclick="window.location.href='terms&conditions.html'">Proceed To Payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 50px;">
+    <div class="d-flex justify-content-center">
+        <div class="logo-container mx-3">
+            <img src="C:/Users/Alexander/OneDrive - STI College Meycauayan/Desktop/capstoneupdated/new layout/Russel Etits/backgroundimages/DOT LOGO.png" alt="Logo" class="logo">
+            <h1 class="text-white" style="text-align: center; font-size: .5rem">Department of Tourism</h1>
+        </div>
+        <div class="logo-container mx-3">
+            <img src="C:/Users/Alexander/OneDrive - STI College Meycauayan/Desktop/capstoneupdated/new layout/Russel Etits/backgroundimages/TPB.png" alt="Logo" class="logo">
+            <h1 class="text-white" style="text-align: center; font-size: .5rem">Tourism Promotion Board Philippines</h1>
+        </div>
+        <div class="logo-container mx-3">
+            <img src="C:/Users/Alexander/OneDrive - STI College Meycauayan/Desktop/capstoneupdated/new layout/Russel Etits/backgroundimages/PTAA.png" alt="Logo" class="logo">
+            <h1 class="text-white" style="text-align: center; font-size: .5rem">Philippine Travel Agencies Association</h1>
+        </div>
+        <div class="logo-container mx-3">
+            <img src="C:/Users/Alexander/OneDrive - STI College Meycauayan/Desktop/capstoneupdated/new layout/Russel Etits/backgroundimages/PHILTOA.png" alt="Logo" class="logo">
+            <h1 class="text-white" style="text-align: center; font-size: .5rem">The Philippine Tour Operators Association</h1>
+        </div>
+        <div class="logo-container mx-3">
+            <img src="C:/Users/Alexander/OneDrive - STI College Meycauayan/Desktop/capstoneupdated/new layout/Russel Etits/backgroundimages/Love Philippines Blue.png" alt="Logo" class="logo">
+            <h1 class="text-white" style="text-align: center; font-size: .5rem">I Love The Philippines</h1>
+        </div>
+    </div>
+    <h6 class="text-white mt-4 mb-3" style="letter-spacing: 1px; text-align: center; font-size: 1rem">Follow Us On
+        <a class=" px-1" href="https://www.facebook.com/etourmo" style="color: #0277e6; font-size: 1rem">Facebook</a></h6>
+</div>
+       
+<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="row">
+        <div class="col-lg-6 text-center3 text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white-50">Copyright &copy; <a href="#"style="color: #0277e6;">RightPath</a>. All Rights Reserved. 2024</a>
+            </p>
+        </div>
+        <div class="col-lg-6 text-center3 text-md-right">
+            <p class="m-0 text-white-50">Designed by RightPath</p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+</body>
+
+</html>

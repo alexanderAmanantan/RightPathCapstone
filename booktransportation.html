@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>eTourMo - Travel and Tours</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Free HTML Templates" name="keywords">
+<meta content="Free HTML Templates" name="description">
+
+<!-- Favicon -->
+<link href="img/favicon.ico" rel="icon">
+
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<style>
+    .justify-content-center {
+    justify-content: center !important;
+}
+        /* Add this CSS to your existing stylesheet or in a <style> tag in the head of your HTML document */
+        .package-item {
+        height: 100%; /* Set a fixed height for each package item */
+    }
+
+    .package-img {
+width: 100%;
+height: 50%;
+object-fit: cover;
+}
+
+.navbar-brand {
+    display: inline-block;
+    cursor: pointer;
+    /* Add more styles as needed */
+}
+    /* Change color of active link to blue */
+    .navbar-nav .nav-link.active {
+    color: #0277e6 !important;
+    }
+    /* Change hover color to light blue for specific links */
+    .navbar-nav .nav-link[href="home.html"]:hover,
+    .navbar-nav .nav-link[href="about.html"]:hover,
+    .navbar-nav .nav-link[href="service.html"]:hover,
+    .navbar-nav .nav-link[href="contact.html"]:hover
+    {
+        color: #0277e6;;
+    }
+    .chat-icon {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #007bff;
+color: #fff;
+font-size: 24px;
+width: 50px;
+height: 50px;
+line-height: 50px;
+text-align: center;
+border-radius: 50%;
+cursor: pointer;
+transition: transform 0.3s ease;
+z-index: 9999;
+}
+
+.chat-icon:hover {
+transform: scale(1.1);
+}
+</style>
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-light pt-3 pb-0.6 d-none d-lg-block">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div style="position: absolute; left: 0;">
+            <a href="home.html" class="topbar-brand">
+                <img src="C:/Users/Alexander/OneDrive - STI College Meycauayan/Desktop/defense/RightPathLO/backgroundimages/269622747_905285053523305_1106364928305022815_n.jpg" alt="eTourMo Logo" style="max-height: 80px; width: 80px;">
+            </a>
+        </div>
+        <div class="text-center">
+            <h2 style="color:#0277e6;">IT'S TIME TO TRAVEL! EXPLORE THE WORLD WITH US</h2>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light  border-5 border-primary sticky-top p-0">
+    <div class="collapse navbar-collapse justify-content-between px-3 text-center" id="navbarCollapse">
+        <div class="navbar-nav mx-auto"> <!-- Changed ml-auto to mx-auto -->
+            <a href="accounts.html" class="nav-item nav-link">Trip Planner</a>
+            <a href="reviews.html" class="nav-item nav-link">Reviews</a>
+            <a href="about.html" class="nav-item nav-link">About ETourMo Travel and Tours</a>
+            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+        </div>
+        <div class="navbar-nav">
+            <a href="accounts.html" class="nav-item nav-link btn btn-primary mx-2" style="padding: 0.25rem 0.5rem; font-size: 0.875rem; line-height: 1.25; border-radius: 0.2rem; background-color: black; color:white">Log in</a>
+            <a href="accounts.html" class="nav-link " style= "padding: 0.25rem 0.5rem; font-size: 0.875rem; line-height: 1.25; border-radius: 0.2rem;">Sign up</a>
+        </div> 
+    </div>
+</nav>
+
+<!-- Navbar End -->
+
+
+<!-- Header Start -->
+<div class="container-fluid page-header" style="background-image: url('D:/layout june 4/Russel Etits/backgroundimages/victory-liner-new-normal-bus-640-1597735508.jpg'); background: size 100px; background-position: center; background-repeat: no-repeat;">
+<div class="container">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 200px">
+        <h3 class="display-4 text-white text-uppercase">Transportation</h3>
+    </div>
+</div>
+</div>
+<!-- Header End -->
+
+
+<!--Transportation Start-->
+<div class="container-fluid py-5">
+<div class="container pt-5 pb-3">
+    <div class="center-name mb-2 pb-3">
+        <h6 class="text-uppercase" style="letter-spacing: 5px; color: #0277e6;">Available Transportation</h6>
+        <h1>Comfortable Transportation</h1>
+    </div>
+    <div class="row justify-content-center"> <!-- Change: Added justify-content-center to center the row -->
+        <div class="col-lg-4 col-md-6 mb-5 pb-5">
+            <div class="package-item bg-white mb-5">
+                <img class="img-fluid package-img" src="D:/layout june 4/Russel Etits/backgroundimages/images (1).jpg" alt="">
+                <div class="p-4">
+                    <div class="d-flex justify-content-between mb-3">
+                        <small class="m-0"><i class="fa fa-car mr-2" style="color: #0277e6;"></i>Van</small>
+                        <small class="m-0"><i class="fa fa-user mr-2" style="color: #0277e6;"></i>12 Persons</small>
+                    </div>
+                    <div class="border-top mt-3 pt-1">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="m-0"><i class="fa fa-star mr-2"style="color: #0277e6;"></i>4.5 <small>(250)</small></h6>
+                            <h5 class="m-0">₱ 12,320</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5 pb-5">
+            <div class="package-item bg-white mb-5">
+                <img class="img-fluid package-img" src="D:/layout june 4/Russel Etits/backgroundimages/4770033_orig.jpg" alt="">
+                <div class="p-4">
+                    <div class="d-flex justify-content-between mb-3">
+                        <small class="m-0"><i class="fa fa-car mr-2" style="color: #0277e6;"></i>Bus</small>
+                        <small class="m-0"><i class="fa fa-user mr-2" style="color: #0277e6;"></i>40 Persons</small>
+                    </div>
+                    <div class="border-top mt-3 pt-1">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="m-0"><i class="fa fa-star mr-2"style="color: #0277e6;"></i>4.5 <small>(250)</small></h6>
+                            <h5 class="m-0">₱ 30,231</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Transportation End -->
+
+
+<div class="chat-icon">🗨️</div>
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 50px;">
+    <div class="d-flex justify-content-center">
+        <div class="logo-container mx-3">
+            <img src="C:/Users/Alexander/OneDrive - STI College Meycauayan/Desktop/defense/RightPathLO/backgroundimages/DOT LOGO.png" alt="Logo" class="logo">
+            <h1 class="text-white" style="text-align: center; font-size: .5rem">Department of Tourism</h1>
+        </div>
+        <div class="logo-container mx-3">
+            <img src="C:/Users/Alexander/OneDrive - STI College Meycauayan/Desktop/defense/RightPathLO/backgroundimages/TPB.png" alt="Logo" class="logo">
+            <h1 class="text-white" style="text-align: center; font-size: .5rem">Tourism Promotion Board Philippines</h1>
+        </div>
+        <div class="logo-container mx-3">
+            <img src="C:/Users/Alexander/OneDrive - STI College Meycauayan/Desktop/defense/RightPathLO/backgroundimages/PTAA.png" alt="Logo" class="logo">
+            <h1 class="text-white" style="text-align: center; font-size: .5rem">Philippine Travel Agencies Association</h1>
+        </div>
+        <div class="logo-container mx-3">
+            <img src="C:/Users/Alexander/OneDrive - STI College Meycauayan/Desktop/defense/RightPathLO/backgroundimages/PHILTOA.png" alt="Logo" class="logo">
+            <h1 class="text-white" style="text-align: center; font-size: .5rem">The Philippine Tour Operators Association</h1>
+        </div>
+        <div class="logo-container mx-3">
+            <img src="C:/Users/Alexander/OneDrive - STI College Meycauayan/Desktop/defense/RightPathLO/backgroundimages/Love Philippines Blue.png" alt="Logo" class="logo">
+            <h1 class="text-white" style="text-align: center; font-size: .5rem">I Love The Philippines</h1>
+        </div>
+    </div>
+    <h6 class="text-white mt-4 mb-3" style="letter-spacing: 1px; text-align: center; font-size: 1rem">Follow Us On
+        <a class=" px-1" href="https://www.facebook.com/etourmo" style="color: #0277e6; font-size: 1rem">Facebook</a></h6>
+</div>
+       
+<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="row">
+        <div class="col-lg-6 text-center3 text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white-50">Copyright &copy; <a href="#"style="color: #0277e6;">RightPath</a>. All Rights Reserved. 2024</a>
+            </p>
+        </div>
+        <div class="col-lg-6 text-center3 text-md-right">
+            <p class="m-0 text-white-50">Designed by RightPath</p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+</body>
+
+</html>

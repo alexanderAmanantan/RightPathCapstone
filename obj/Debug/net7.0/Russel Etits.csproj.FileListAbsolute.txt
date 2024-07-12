@@ -1,0 +1,15 @@
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\bin\Debug\net7.0\Russel Etits.exe
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\bin\Debug\net7.0\Russel Etits.deps.json
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\bin\Debug\net7.0\Russel Etits.runtimeconfig.json
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\bin\Debug\net7.0\Russel Etits.dll
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\bin\Debug\net7.0\Russel Etits.pdb
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\obj\Debug\net7.0\Russel Etits.csproj.AssemblyReference.cache
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\obj\Debug\net7.0\Russel Etits.GeneratedMSBuildEditorConfig.editorconfig
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\obj\Debug\net7.0\Russel Etits.AssemblyInfoInputs.cache
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\obj\Debug\net7.0\Russel Etits.AssemblyInfo.cs
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\obj\Debug\net7.0\Russel Etits.csproj.CoreCompileInputs.cache
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\obj\Debug\net7.0\Russel Etits.dll
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\obj\Debug\net7.0\refint\Russel Etits.dll
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\obj\Debug\net7.0\Russel Etits.pdb
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\obj\Debug\net7.0\Russel Etits.genruntimeconfig.cache
+D:\RightPath Layout\THE FINAL LAYOUT\Russel Etits\obj\Debug\net7.0\ref\Russel Etits.dll
