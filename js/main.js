@@ -65,32 +65,11 @@
             }
         }
     });
-
-    // Star rating function
-    function handleRating(rating) {
-        for (let i = 1; i <= 5; i++) {
-            let star = document.getElementById('star' + i);
-            if (i <= rating) {
-                star.checked = true;
-                star.nextElementSibling.style.color = 'gold';
-            } else {
-                star.checked = false;
-                star.nextElementSibling.style.color = 'gray';
-            }
-        }
-    }
-
-    // Event listeners for star clicks
-    for (let i = 1; i <= 5; i++) {
-        document.getElementById('star' + i).addEventListener('click', function() {
-            handleRating(i);
-        });
-    }
-
+    
 })(jQuery);
 
-// JavaScript to toggle editable mode
-document.getElementById("edit-button").addEventListener("click", function() {
+  // JavaScript to toggle editable mode
+  document.getElementById("edit-button").addEventListener("click", function() {
     var overview = document.querySelector('.highlights');
     overview.classList.toggle('editable');
     var spans = overview.querySelectorAll('span');
@@ -101,16 +80,18 @@ document.getElementById("edit-button").addEventListener("click", function() {
       input.setAttribute('value', text);
       span.replaceWith(input);
     });
-});
+  });
 
-// Review section toggle
-function toggleReviewSection() {
+  //Review
+  function toggleReviewSection() {
     var checkBox = document.getElementById("showReviewSection");
     var reviewSection = document.getElementById("reviewSection");
     reviewSection.style.display = checkBox.checked ? "block" : "none";
 }
 
-// Package Information button
+//Package Information button
 document.getElementById("confirm-booking").addEventListener("click", function() {
     window.location.href = "accounts.html";
-});
+  });
+
+  //Updated JAVASCRIPT for Web App
