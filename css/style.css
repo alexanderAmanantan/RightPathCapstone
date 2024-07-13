@@ -5,7 +5,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -526,7 +526,7 @@ mark,
 }
 
 .img-fluid {
-  max-width: auto;
+  max-width: 100%;
   height: auto;
 }
 
@@ -9605,7 +9605,6 @@ h6,
   left: 0px;
   border-width: 30px;
 }
-<!--asd-->
 
 .service-item {
   transition: .5s;
@@ -9768,10 +9767,13 @@ h6,
 .contact-form .help-block ul {
   margin: 0;
   padding: 0;
+}
+.faqs-bullet{
   list-style-type: none;
 }
 
     /* Change hover color to light blue for specific links */
+    .navbar-nav .nav-link[href="accomodation.html"]:hover,
     .navbar-nav .nav-link[href="travelblog.html"]:hover,
     .navbar-nav .nav-link[href="reviews.html"]:hover,
     .navbar-nav .nav-link[href="about.html"]:hover,
@@ -9842,7 +9844,7 @@ transform: scale(1.1);
   margin-left: 13%;
 }
 .text-center1{
-  margin-left: 19%;
+  margin-left: 14%;
 }
 .topbar-brand{
   margin-left: 50%;
@@ -9907,6 +9909,8 @@ transform: scale(1.1);
       border: 3px solid #fff;
       box-shadow: 0 0 0 3px #1778f2; /* Facebook's blue color */
       overflow: hidden;
+      margin-left: 10px;
+      margin-top: 10px;
   }
   .profile-picture img {
       width: 100%;
@@ -10281,14 +10285,11 @@ input[type="submit"]:hover {
 }
 
 /*CEO biography*/
-.container9 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.ceo-container1 {
+  display:flex;
   flex-wrap: wrap;
   margin: 20px;
-  max-width: 100%;
-  width: 800;
+  margin-left: 550px;
 }
 
 .ceo-container {
@@ -10308,10 +10309,9 @@ input[type="submit"]:hover {
   height: 200px;
   border-radius: 50%;
   margin-bottom: 10px;
-  float: top;
+  float: left;
 }
 
-/*Certificate About Us*/
 /* Certificate Container Styles */
 .certificate-container {
   display: flex;
@@ -10340,7 +10340,6 @@ input[type="submit"]:hover {
   width: 250px; /* Adjust the width as needed */
   height: 200px; /* Maintain aspect ratio */
 }
-
 .hotel-room-container {
   position: relative;
   top: 20px;
@@ -10583,54 +10582,168 @@ h1 {
   object-fit: cover;
 }
 
-/* review and rating stars*/
-.rating input[type="radio"] {
-  display: none;
-}
 
-.rating label {
-  font-size: 2rem;
-  color: gray;
-  cursor: pointer;
-  float: center; /* Add this line to align stars from left to right */
-  text-align: center;
-}
-
-.rating input[type="radio"]:checked ~ label {
-  color: gold;
-}
-
-.rating {
-  text-align: center;
-}
-
- /* Add CSS styling here */
- .report-analytics-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-gap: 20px;
-  justify-content: center;
-}
-
-.report-analytics-container {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+/*Featured Packages*/
+.featured-package-container {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
   padding: 20px;
+  background-color: #fff;
+}
+
+.featured-package {
+  width: 300px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.featured-package-img {
+  height: 150px;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.featured-package-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.featured-package-details {
+  padding: 10px;
   text-align: center;
+}
+
+.featured-package-details h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.featured-package-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 4px;
+}
+
+.featured-package-reviews {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/*Accomodation*/
+.accomodation-filters {
+  margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  text-align: center;
 }
 
-.analytics-report-information {
-  list-style-type: none; /* Removes bullets */
+.accomodation-filters label, .filters select {
+  margin-right: 10px;
 }
 
-/* Additional styling for better appearance */
-.analytics-report-information li {
-  font-size: 18px;
+.accomodation-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.accomodation-package {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.accomodation-package img {
+  width: 100%;
+  border-radius: 8px;
   margin-bottom: 10px;
 }
 
-/*Updated CSS for the Web App*/
+.accomodation-package h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.accomodation-package p {
+  margin-bottom: 5px;
+}
+
+.accomodation-package .btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 75px;
+}
+
+.accomodation-package .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Login Container */
+.login-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form input[type="submit"] {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.login-form p {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-form p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+}
+
+/*Updated CSS for System*/
